@@ -10,7 +10,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #f4f8fb;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   padding: 20px;
 }
 
@@ -61,6 +61,24 @@ body {
   color: #131313;
 }
 
+.difficulty-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #131313;
+}
+
+#difficulty {
+  padding: 8px 10px;
+  border: 2px solid #2E9DF7;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: white;
+  cursor: pointer;
+}
+
 .button-group {
   display: flex;
   gap: 10px;
@@ -99,6 +117,14 @@ body {
   font-size: 18px;
   font-weight: bold;
   color: #159A48;
+  text-align: center;
+}
+
+#milestone-message {
+  min-height: 24px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #F5402C;
   text-align: center;
 }
 
@@ -147,6 +173,34 @@ body {
   height: 18px;
   opacity: 0.9;
   animation: confettiFall linear forwards;
+}
+
+.footer {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.footer p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #131313;
+  font-weight: 600;
+}
+
+.footer a {
+  margin: 0 10px;
+  color: #2E9DF7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 @keyframes dropFall {
@@ -210,5 +264,14 @@ body {
   #start-btn,
   #reset-btn {
     width: 100%;
+  }
+
+  .difficulty-box {
+    flex-direction: column;
+  }
+
+  .footer a {
+    display: block;
+    margin: 6px 0;
   }
 }
